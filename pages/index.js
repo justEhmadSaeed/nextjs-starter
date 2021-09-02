@@ -1,8 +1,11 @@
+import Footer from '../components/footer';
+import Navbar from '../components/Navbar';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
 	return (
-		<div>
+    <div>
+			<Navbar />
 			<h1>Home</h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -24,6 +27,7 @@ export default function Home() {
 				cupidatat non proident, sunt in culpa qui officia deserunt
 				mollit anim id est laborum.
 			</p>
+			<Footer />
 		</div>
 	);
 }
