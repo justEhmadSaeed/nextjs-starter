@@ -26,6 +26,8 @@ nav a {
 }
 nav .logo {
 	margin-right: auto;
+	display: flex;
+  align-items: center;
 }
 footer {
 	display: block;
