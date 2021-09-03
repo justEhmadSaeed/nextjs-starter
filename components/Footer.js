@@ -1,9 +1,10 @@
-import Link from 'next/link';
+import React from 'react';
+
 const Footer = () => {
 	return (
-		<div>
-			Copyright 2021: Made by <strong>Ehmad Saeed</strong>
-		</div>
+		<footer>
+			<h4>Copy Rights 2021: Made by Ehmad Saeed.</h4>
+		</footer>
 	);
 };
 
