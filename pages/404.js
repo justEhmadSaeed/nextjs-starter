@@ -1,26 +1,34 @@
 import Link from 'next/link';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
+
 const NotFoundPage = () => {
-    const router = useRouter();
-    
-    useEffect(() => {
-        // Redirect the user after 3 seconds
+	const router = useRouter();
+
+	useEffect(() => {
+		// Redirect the user after 3 seconds
 		setTimeout(() => {
 			router.push('/');
 		}, 3000);
 	}, []);
 	return (
-		<div className='not-found'>
-			<h1>Page Not Found!</h1>
-			<h2>This page does not exist.</h2>
-			<p>
-				Go back to the{' '}
-				<Link href='/'>
-					<a>Home Page</a>
-				</Link>
-			</p>
-		</div>
+		<>
+			<Head>
+				<title>Ehmad's Blog | 404</title>
+				<meta name='keywords' content='Ehmad' />
+			</Head>
+			<div className='not-found'>
+				<h1>Page Not Found!</h1>
+				<h2>This page does not exist.</h2>
+				<p>
+					Go back to the{' '}
+					<Link href='/'>
+						<a>Home Page</a>
+					</Link>
+				</p>
+			</div>
+		</>
 	);
 };
 
