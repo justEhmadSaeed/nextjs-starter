@@ -1,14 +1,12 @@
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
-import Head from 'next/head';
+import HeadTag from '../components/HeadTag';
 
 export default function Home() {
 	return (
 		<>
-			<Head>
-				<title>Ehmad's Blog | Home</title>
-				<meta name='keywords' content='Ehmad' />
-			</Head>
+			<HeadTag title='Home' />
+
 			<div>
 				<h1 className={styles.title}>Home</h1>
 				<p className={styles.text}>

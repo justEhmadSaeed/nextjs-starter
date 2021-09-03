@@ -1,6 +1,6 @@
-import Head from 'next/head';
 import styles from '../../styles/Blogs.module.css';
 import Link from 'next/link';
+import HeadTag from '../../components/HeadTag';
 
 export const getStaticProps = async () => {
 	const res = await fetch(
@@ -18,10 +18,8 @@ export const getStaticProps = async () => {
 const blogs = ({ blogsData }) => {
 	return (
 		<>
-			<Head>
-				<title>Ehmad's Blog | Blogs</title>
-				<meta name='keywords' content='Ehmad' />
-			</Head>
+			<HeadTag title='Blogs' />
+
 			<div>
 				<h1>Blogs List</h1>
 				{blogsData.map((blog) => (

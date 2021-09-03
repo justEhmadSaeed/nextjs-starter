@@ -1,3 +1,5 @@
+import HeadTag from '../../components/HeadTag';
+
 export const getStaticPaths = async () => {
 	const res = await fetch(
 		'http://jsonplaceholder.typicode.com/posts'
@@ -27,10 +29,14 @@ export const getStaticProps = async (context) => {
 
 const BlogPost = ({ blog }) => {
 	return (
-		<div>
-			<h1>{blog.title}</h1>
-			<p>{blog.body}</p>
-		</div>
+		<>
+			<HeadTag title={`Blog ${blog.id}`} />
+
+			<div>
+				<h1>{blog.title}</h1>
+				<p>{blog.body}</p>
+			</div>
+		</>
 	);
 };
 

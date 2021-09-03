@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import Head from 'next/head';
+import HeadTag from '../components/HeadTag';
 
 const NotFoundPage = () => {
 	const router = useRouter();
@@ -11,13 +11,11 @@ const NotFoundPage = () => {
 		setTimeout(() => {
 			router.push('/');
 		}, 3000);
-	}, []);
+	}, [router]);
 	return (
 		<>
-			<Head>
-				<title>Ehmad's Blog | 404</title>
-				<meta name='keywords' content='Ehmad' />
-			</Head>
+			<HeadTag title='404' />
+
 			<div className='not-found'>
 				<h1>Page Not Found!</h1>
 				<h2>This page does not exist.</h2>

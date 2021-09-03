@@ -1,12 +1,9 @@
-import Head from 'next/head';
+import HeadTag from '../components/HeadTag';
 
 const About = () => {
 	return (
 		<>
-			<Head>
-				<title>Ehmad's Blog | About</title>
-				<meta name='keywords' content='Ehmad' />
-			</Head>
+			<HeadTag title='About' />
 			<div>
 				<h1>About</h1>
 				<p>
