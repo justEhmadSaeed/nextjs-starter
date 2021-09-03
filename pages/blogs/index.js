@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '../../styles/Blogs.module.css';
+import Link from 'next/link';
 
 export const getStaticProps = async () => {
 	const res = await fetch(
@@ -24,11 +25,11 @@ const blogs = ({ blogsData }) => {
 			<div>
 				<h1>Blogs List</h1>
 				{blogsData.map((blog) => (
-					<div key={blog.id}>
+					<Link href={`/blogs/${blog.id}`} key={blog.id}>
 						<a className={styles.single}>
 							<h3>{blog.title}</h3>
 						</a>
-					</div>
+					</Link>
 				))}
 			</div>
 		</>
