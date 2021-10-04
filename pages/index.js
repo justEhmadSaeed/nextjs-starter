@@ -10,24 +10,19 @@ export default function Home() {
 			<div>
 				<h1 className={styles.title}>Home</h1>
 				<p className={styles.text}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit
-					esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-					occaecat cupidatat non proident, sunt in culpa qui officia
-					deserunt mollit anim id est laborum.
+					 An application programming interface is a connection between computers
+                                         or between computer programs. It is a type of software interface,
+                                         offering a service to other pieces of software. A document or standard
+                                         that describes how to build or use such a connection or interface is
+                                         called an API specification
 				</p>
 				<p className={styles.text}>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit
-					esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-					occaecat cupidatat non proident, sunt in culpa qui officia
-					deserunt mollit anim id est laborum.
+				In blogs section, here is an API which fetches data from Database.
+                                Examples of APIs we use in our daily life are:
+                                 <ui></ui>
+                                <li> Pay with Paypal</li>
+                                <li> Twitter bots</li>
+                                <li> Travel booking</li>
 				</p>
 				<Link href='/blogs'>
 					<a className={styles.btn}>See Blogs List</a>
